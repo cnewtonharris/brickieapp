@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:brickieapp/homepage.dart';
 
 void main() {
   runApp(const MyApp());
@@ -12,9 +13,12 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Brickie Wiki',
       theme: ThemeData(
-        primarySwatch: Colors.blue,
+        primarySwatch: Colors.orange,
+        useMaterial3: true,
+        buttonTheme: ButtonThemeData(buttonColor: Colors.orange),
+        scaffoldBackgroundColor: Colors.white
       ),
-      home: const MyHomePage(title: 'Brickie Wiki'),
+      home: const Homepage(),
     );
   }
 }
